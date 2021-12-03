@@ -1,0 +1,17 @@
+#This algorithm can take in two seperate lists of numbers and return the list with the largest sum of numbers. It also recognizes when both lists have equal sums.
+
+def larger_sum(lst1, lst2):
+    sum1 = 0
+    sum2 = 0
+    for number in lst1:
+        sum1 += number 
+    for number in lst2:
+        sum2 += number 
+    if sum1 > sum2:
+        return ("List 1 is larger with a sum of " + str(sum1)) 
+    elif sum2 > sum1:
+        return ("List 2 is larger with a sum of " + str(sum2))
+    else:
+        return ("Both lists have equal sums")
+     
+     
